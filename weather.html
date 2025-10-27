@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="./assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./assets/bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <div class="container-fluid flex-row-clean ">
+         <div class="left">
+         <img src="./assets/images/logo.svg" alt="" width="150px">
+        </div>
+       <div class="right">
+        <button onclick="dropDown()" type="button"><img class="units" src="./assets/images/icon-units.svg" width="25px" alt=""> Units <img class="drop" src="./assets/images/icon-dropdown.svg"  alt=""></button>
+       </div>
+       
+        <div class="dropdown">
+            <div class="dropdown-section">
+                <p><a href="">Switch to Imperial</a></p>
+                <p>Temperature</p>
+                <p><a href="">Celsius(&#8451;)</a></p>
+                <p><a href="">Fahrenheit</a></p>
+                <p>Wind Speed</p>
+                <p><a href="">km/h</a></p>
+                <p><a href="">mph</a></p>
+                <p>Precipitation</p>
+                <p><a href="">mm</a></p>
+                <p><a href="">inches(in)</a></p>
+            </div>
+
+    </div>
+    </div>
+    <div class="container">
+        <div class="middle">
+            <h1>How`s the sky looking today ?</h1>
+        </div>
+         <div class="inputButton">
+          <input type="search" name="" id="" placeholder="Search for a place ...">
+          <img src="./assets/images/icon-search.svg" alt="">
+            <button type="button">Search</button>
+         </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9">
+             <div class="bigPic"> 
+                <img src="./assets/images/bg-today-large.svg"  alt="">
+            </div>
+            </div>
+            <div class="col-md-3">
+              <div class="forecast">
+                <div class="forecastButton">
+                    <p>hourly forecast</p>
+                <button class="weeks" onclick="dayDrop()" type="button">tuesday<img src="./assets/images/icon-dropdown.svg" alt=""></button>
+                </div>
+                <div class="hourly"></div>
+                <div class="hourly"></div>
+                <div class="hourly"></div>
+                <div class="hourly"></div>
+                <div class="hourly"></div>
+                <div class="hourly"></div>
+                <div class="hourly"></div>
+                <div class="hourly"></div>
+              </div>
+            </div>
+        </div>
+        <div class="dayCount">
+           <p onclick="selection(this)" class="day">saturday</p>
+           <p onclick="selection(this)"class="day">sunday</p>
+           <p onclick="selection(this)"class="day">monday</p>
+           <p onclick="selection(this)"class="day">tuesday</p>
+           <p onclick="selection(this)"class="day">wednesday</p>
+           <p onclick="selection(this)" class="day">thursday</p>
+           <p onclick="selection(this)" class="day">friday</p>
+        </div>
+    </div>
+    <div class="container-fluid">
+         <div class="row weather-info">
+             
+            <div class=" col-md-3 details">
+                   <p>Feels like</p>
+               
+            </div>
+            <div class=" col-md-3 details">
+                 <p>Humidity</p>
+                  
+            </div>
+            <div class=" col-md-3 details-second">
+                   <p>wind</p>
+                   
+            </div>
+            <div class=" col-md-3 details-second">
+                <p>precipitaion</p>
+               
+            </div>
+        </div> 
+        
+    </div>
+   <div class="container-fluid">
+        <p class="daily">Daily forecast</p>
+       <div class="main">
+        <div class="daily-details">
+       </div>
+       <div class="daily-details">
+       </div>
+       <div class="daily-details">
+       </div>
+       <div class="daily-details">
+       </div>
+        <div class="daily-details">
+       </div>
+        <div class="daily-details firstClass">
+       </div>
+        <div class="daily-details secondClass">
+       </div>
+       </div>
+   </div>
+   <script src="./assets/app.js"></script>
+</body>
+</html>

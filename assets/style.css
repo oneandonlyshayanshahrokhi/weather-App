@@ -1,0 +1,533 @@
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+body{
+   font-family: 'DMSans';
+    background-color: hsl(243, 96%, 9%) !important;
+    height: 1000px;
+}
+  
+@font-face {
+    font-family: 'DMSans';
+    src: url('./fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'Bricolage_Grotesque';
+    src: url('./fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.flex-row-clean{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.left  {
+    margin-left: 5% !important;
+}
+
+.right  {
+    margin-right: 5% !important;
+}
+
+.right button{
+    background-color: hsl(243, 23%, 30%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    border: none;
+    max-width: 100%;
+
+}
+
+.right button .units{
+    padding-right: 8px !important;
+}
+
+.right button .drop{
+    padding-left: 8px !important;
+}
+
+.dropdown{
+    overflow: hidden !important;
+    position: fixed;
+    right: -20%;
+    top: 5%;
+    width: 13%;
+    height: 33%;
+    background-color: hsl(243, 23%, 30%);
+    transition: right 0.5s ease;
+    border-radius: 5px;
+    z-index: 200;
+}
+.section-title{
+    color: hsl(240, 6%, 70%);
+}
+
+.dropdown-option{
+    color: hsl(0, 0%, 100%);
+}
+
+
+.dropdown-section p a{
+text-decoration: none;
+color: hsl(0, 0%, 100%);
+}
+
+.dropdown-section p{
+    font-size: 13px !important;
+    padding: 5px 5px !important;
+    color: hsl(240, 6%, 70%);
+    
+}
+
+.dropdown-section p:nth-child(odd){
+ background-color: hsl(243, 27%, 20%);
+  border-radius: 8px;
+}
+
+.middle h1{
+   
+      font-family: 'Bricolage_Grotesque';
+color: hsl(0, 0%, 100%);
+ margin-top: 5% !important;
+ 
+    margin-left: 350px  !important;
+}
+
+.inputButton input {
+    margin-left: 32% !important;
+   width: 35%;
+   background-color: hsl(243, 23%, 30%);
+   border: none;
+   padding: 8px 10px !important;
+    border-radius: 8px;
+}
+
+.inputButton input::placeholder{
+       color: hsl(0, 0%, 100%) !important;
+      padding-left: 10%;
+}
+
+.inputButton input:focus{
+    color: hsl(0, 0%, 100%) !important;
+    padding-left: 50px !important;
+    
+}
+
+.inputButton{
+    margin-top: 25px !important;
+    position: relative;
+}
+
+.inputButton img{
+    position: absolute;
+    top: 25%;
+    left: 33%;
+    width: 1.5%;
+}
+
+.inputButton button{
+    margin-left: 0.5% !important;
+    border: none;
+      padding: 8px 10px !important;
+      border-radius: 5px;
+      color: hsl(0, 0%, 100%);
+           background-color: hsl(248, 70%, 36%);
+         transition-duration: 200ms;
+}
+
+.inputButton button:hover{
+     background-color: hsl(233, 67%, 56%);
+      outline: 1px solid hsl(233, 67%, 56%) !important;
+      outline-offset: 3px;
+}
+
+.bigPic {
+    margin-top: 5% !important;
+    margin-left: 9% !important;
+ width: 730px;
+}
+
+.bigPic img{
+width: 100%;
+}
+
+.forecast{
+margin-top: 15% !important;
+margin-left: -35% !important;
+width: 100%;
+height: 700px;
+background-color: hsl(243, 23%, 30%);
+border-radius: 15px;
+padding: 5px 10px !important;
+
+}
+
+.hourly{
+  margin: 5px 15px !important;
+border-radius: 10px;
+    width: 90%;
+    margin-top: 25px !important;
+    height: 50px;
+    background-color: hsl(243, 23%, 24%);
+}
+
+.forecast p{
+    margin-top: 25px !important;
+    color: hsl(0, 0%, 100%) !important;
+}
+
+.forecastButton{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.forecastButton button{
+   padding: 5px 10px !important;
+   margin-top: 5% !important;
+   text-align: center !important;
+  height: 36px;
+    color: hsl(0, 0%, 100%);
+ background-color: hsl(243, 23%, 24%);
+border: none;
+}
+
+.dayCount{
+    padding: 5px 15px !important;
+   position: fixed;
+    top: 35%;
+    right: 10%;
+    width: 13%;
+    height: 20%;
+    background-color: hsl(243, 23%, 24%);
+    color: hsl(0, 0%, 100%);
+    transition: right 0.5s ease;
+    border-radius: 5px;
+    z-index: 200;
+   box-shadow: 0 4px 6px black;
+   display: none;
+   z-index: 201;
+   
+}
+
+.dayCount .day{
+    padding-left: 15px !important;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.dayCount .day:hover{
+    width: 100%;
+background-color: hsl(243, 23%, 30%);
+border-radius: 5px;
+}
+
+.weather-info{
+    margin-left: 60px !important;
+}
+
+
+.details{
+    margin-left: 28px !important;
+    margin-top: -400px !important;
+    width: 160px;
+    height: 100px ;
+    background-color: hsl(243, 23%, 30%);
+    border-radius: 15px;
+}
+
+.details-second{
+    margin-left: 25px !important;
+        margin-top: -400px !important;
+
+    width: 160px;
+    height: 100px ;
+    background-color: hsl(243, 23%, 30%);
+    border-radius: 15px;
+}
+
+.details p ,.details-second p{
+    color: hsl(250, 6%, 84%);
+     margin-left: 5% !important;
+     margin-top: 5% !important;
+}
+
+.details h4 , .details-second h4{
+        color: hsl(0, 0%, 100%);
+        margin-top: 20% !important;
+        margin-left: 5% !important;
+
+}
+
+
+
+
+.main{
+    margin-top: -250px !important;
+    margin-left: 45px !important;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+.daily-details{
+    margin-left: 15px !important;
+    width: 95px;
+     height: 150px;
+ background-color: hsl(243, 23%, 30%);
+ border-radius: 10px;
+}
+
+.container-fluid{
+    position: relative;
+}
+
+.daily{
+        color: hsl(250, 6%, 84%);
+
+    position: absolute;
+    bottom: 155px;
+    left: 60px;
+} 
+.bigPic{
+    position: relative;
+}
+.bigPic .firstH{
+    display: flex;
+    font-size: 50px;
+    font-weight: 900;
+    position: absolute;
+    left: 83%;
+    bottom: 45%;
+    color: hsl(250, 6%, 84%) !important;
+}
+
+.bigPic .secondH{
+    position: absolute;
+    left: 2.5%;
+    bottom: 45%;
+    color: hsl(250, 6%, 84%) !important;
+
+}
+
+.bigPic .thirdP{
+    position: absolute;
+    bottom: 35%;
+    left: 2.5%;
+    color: hsl(250, 6%, 84%) !important;
+
+}
+
+.bigPic .overcast{
+    position: absolute;
+    right: 20%;
+    top: 30%;
+    width: 75px;
+}.daily-details .dayName{
+    margin-top: 5% !important;
+    text-align: center;
+        color: hsl(250, 6%, 84%) !important;
+
+}
+
+.daily-details .maxTemp{
+    margin-left: 0;
+    margin-top: 90% !important;
+    color: hsl(250, 6%, 84%) !important;
+}
+
+.daily-details .minTemp{
+        color: hsl(250, 6%, 84%) !important;
+   margin-top: -25% !important;
+   margin-left: 60% !important;
+
+}.weeklyfirst, .weeklysecond,  .weeklythird,  .weeklyfourth, .weeklyfifth, .weeklysixth, .weeklyseventh{
+    position: relative;
+    bottom: 65%;
+    left: 12%;
+    width: 75px;
+}
+
+.hourly-icon{
+    width: 50px;
+}
+
+.hourly{
+   display: flex;
+   
+  
+}
+
+.hourlyp{
+    position: relative;
+    bottom: 10px;
+    flex: 20;
+}
+
+.highThourly{
+    position: relative;
+    bottom: 10px;
+    flex: 5;
+      
+
+}
+
+
+
+.daily-details .weeklyseventh{
+        width: 75px;
+
+}
+
+@media only screen and (max-width:767px){
+    .left{
+        margin-left: 0 !important;
+
+    }
+    .right{
+        margin-right: 0 !important;
+    }.left img{
+        width: 110px !important;
+    }.right button .units{
+    padding-right: 0 !important;
+    }.right button .drop{
+      padding-left: 0 !important;
+    }.right button {
+      font-size: small;
+    }.right .units{
+      width: 25%;
+    }.middle h1{
+       margin-left: 0 !important;
+        font-size: 50px;
+        font-weight: bold ;
+        margin-left: 0 !important;
+        text-align: center;
+    }.inputButton input{
+        margin-top: 10% !important;
+       margin-left: 0 !important;
+       width: 100%;
+    }.inputButton img{
+        left: 3%;
+        top: 35%;
+        width: 5%;
+    }.inputButton button{
+        margin-top: 5% !important;
+        margin-left: 0 !important;
+        width: 100%;
+        padding: 16px 10px !important;
+
+    }.bigPic {
+        margin-left: 0 !important;
+        width: 100%;
+    }.bigPic img{
+        width: 100%;
+    }.forecast{
+        margin-left: 0 !important;
+    }.dayCount{
+        width: 100%;
+        height: 30%;
+        right: 0;
+        top: 65%;
+    }.details{
+        width: 140px;
+        margin-top: 3px !important;
+        margin-left: 15px !important;
+    }.weather-info{
+        margin-left: 3% !important;
+    }.details-second{
+        width: 140px;
+        margin-top: 5px !important;
+        margin-left: 15px !important;
+    }.main{
+        margin-top: 35px !important;
+        margin-left: 0 !important;
+    }.daily{
+        bottom: 97%;
+        left: 30px;
+        
+    }.daily-details{
+        margin-top: 15px !important;
+    }.bigPic .firstH{
+        font-size: 25px;
+        left: 68%;
+    }.secondH{
+        top: 0;
+        left: 30% !important;
+    }.thirdP{
+        top: 20%;
+        left: 20% !important;
+    }.overcast{
+        top: 45% !important;
+        left: 10%;
+    }.firstH{
+        top: 55%;
+        font-size: 25px !important;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+  .middle h1 {
+     margin-left: 90px !important;
+     text-align: center;
+  }.bigPic img{
+    width: 90%;
+  }.bigPic{
+    margin-left: 5% !important;
+    width: 100%;
+  }.forecast{
+    margin-left: -5% !important;
+  }.weather-info{
+    margin-top: 5% !important;
+    margin-left: 2% !important;
+  
+  }.dayCount{
+    top: 20% ;
+    right: 0;
+  }.details{
+     width: 115px;
+     margin-top: -450px !important;
+    margin-left: 15px !important;
+  }.details-second{
+    width: 115px !important;
+    margin-left: 15px !important;
+         margin-top: -450px !important;
+
+  }.main{
+    margin-left: 5% !important;
+    
+  }.daily-details{
+    margin-left: 10px !important;
+    width: 85px;
+  }.bigPic .firstH{
+    left:78%;
+  }.firstH{
+    left: 70% !important;
+    bottom: 35% !important;
+  }.overcast{
+    right: 30% !important;
+  }.firstClass{
+        position: absolute;
+        left: 0;
+        top: 155px;
+    }.secondClass{
+        position: absolute;
+        left: 93px;
+        top: 155px;
+    }
+
+    
+}
+
+
+
